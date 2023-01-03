@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9ade877476.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <article class="container">
+        <nav>
+          <img src="assets/images/logo.png" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-sharp fa-solid fa-circle-xmark"
+              onclick="closeMenu()"
+            ></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front End</p>
+          <h1>
+            Hi im <span> kevin </span> <br />
+            jenn from australia
+          </h1>
+        </div>
+      </article>
+    </header>
+    <!-- ABOUT -->
+    <article id="about">
+      <section class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              consectetur est eaque cupiditate sed, voluptatem delectus quam
+              esse unde repudiandae tenetur officiis nostrum id obcaecati. Porro
+              labore aperiam non placeat.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Education</p>
+              <p class="tab-links" onclick="opentab('education')">Projects</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Frontend
+                  Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>2021-current</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Vel quod alias doloremque
+                  eligendi placeat.
+                </li>
+                <li>
+                  <span>2019-2020</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Vel quod alias doloremque
+                  eligendi placeat.
+                </li>
+                <li>
+                  <span>2018-2019</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Vel quod alias doloremque
+                  eligendi placeat.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>Lorem </span> <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  quod alias doloremque eligendi placeat.
+                </li>
+                <li>
+                  <span>Lorem</span><br />Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Vel quod alias doloremque eligendi placeat.
+                </li>
+                <li>
+                  <span>Loremm</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Vel quod alias doloremque
+                  eligendi placeat.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- Services -->
+    <section id="services">
+      <article class="container">
+        <h2 class="sub-title">Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h3>Web Design</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              minus doloribus eaque rem dicta hic a ipsam tenetur eos enim nihil
+              eius temporibus id repudiandae aliquid quibusdam, quam non
+              aspernatur!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              minus doloribus eaque rem dicta hic a ipsam tenetur eos enim nihil
+              eius temporibus id repudiandae aliquid quibusdam, quam non
+              aspernatur!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Design</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              minus doloribus eaque rem dicta hic a ipsam tenetur eos enim nihil
+              eius temporibus id repudiandae aliquid quibusdam, quam non
+              aspernatur!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+      <article class="container">
+        <h2 class="sub-title">Projects</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/images/work-1.png" alt="work" />
+            <div class="layer">
+              <h4>Lorem app</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, eum numquam ut optio a error molestiae maiores sit
+                dolor voluptate itaque fugiat unde, sunt harum repellendus
+                mollitia consequatur officia architecto!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/images/work-2.png" alt="work" />
+            <div class="layer">
+              <h4>Lorem app</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, eum numquam ut optio a error molestiae maiores sit
+                dolor voluptate itaque fugiat unde, sunt harum repellendus
+                mollitia consequatur officia architecto!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/images/work-3.png" alt="work" />
+            <div class="layer">
+              <h4>Lorem app</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, eum numquam ut optio a error molestiae maiores sit
+                dolor voluptate itaque fugiat unde, sunt harum repellendus
+                mollitia consequatur officia architecto!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="button">See more</a>
+      </article>
+    </section>
+    <!-- Contact Form -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p><i class="fa-solid fa-envelope"></i>JDSJDJ@outl.com</p>
+            <p><i class="fa-solid fa-phone"></i>+546464d456</p>
+            <div class="social-icons">
+              <a href="github.css"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="linkme.sss"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="assets/images/my-cv.pdf" download class="button button-2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form class="contact-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                title="Name only accepts letters and blank spaces."
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                title="Incorrect email"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject to be discussed"
+                title="The subject is required."
+                required
+              />
+              <textarea
+                name="comments"
+                cols="50"
+                rows="5"
+                placeholder="Your message"
+                title="Your comment must not exceed 255 characters"
+                data-pattern="^.{1,255}$"
+                required
+              ></textarea>
+              <input class="button button-2" type="submit" value="Submit" />
+              <div class="contact-form-loader none">
+                <img src="./assets/images/rings.svg" alt="cargando" />
+              </div>
+              <div class="contact-form-response none"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="copyright">
+      <p>Copyright lorem</p>
+    </footer>
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
